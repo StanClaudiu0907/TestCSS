@@ -1,0 +1,183 @@
+                 /* Aliniere elem meniu footer */
+.meniu_footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.meniu_footer ul li:first-child, .meniu_footer ul li:nth-child(2), .meniu_footer ul li:nth-child(3), .meniu_footer ul li:nth-child(4){
+    margin-right: 0;
+}
+
+                /* modificari zona pret */
+.modifpozPret::before {
+    display: inline-block;
+    content: ' ';
+    background-image: url(img/modifpoz.svg);
+    background-size: 0.7em;
+    width: 0.7em;
+    height: 0.7em;
+    background-repeat: no-repeat;  
+    padding-right: 0.25em; 
+}
+.modifpozPret {background-color:#00AA00; color: white !important;
+    border-radius: 10vw;
+}
+  
+.modifnegPret {background-color:#f35530; color: white !important;
+    border-radius: 10vw;
+}
+.modifnegPret::before{
+    display: inline-block;
+    content: ' ';
+    background-image: url(img/modifneg.svg);
+    background-size: 0.7em;
+    width: 0.7em;
+    height: 0.7em;
+    background-repeat: no-repeat;
+    padding-right: 0.25em;
+}
+.pretSimbol{
+    padding: 0 0.5em;
+}
+.pretSimbol::before{
+    display: inline-block;
+    content: ' ';
+    background-size: 0.7em;
+    width: 0.7em;
+    height: 0.7em;
+    padding-right: 0.25em;
+}
+.modifpozVabs::before {
+    display: inline-block;
+    background-image: url(img/modifpozverde.svg);
+    background-size: 0.7em;
+    width: 0.7em;
+    height: 0.7em;
+    background-repeat: no-repeat;  
+    padding-right: 0.25em; 
+}
+.modifpozVabs {background-color:#5eff0028; color: #00AA00 !important;
+    border-radius: 10vw;
+    padding:0 0.5em;
+}
+  
+.modifnegVabs {background-color:#e7000f23; color: #f35530 !important;
+    border-radius: 10vw;
+    padding:0 0.5em;
+}
+.modifnegVabs::before{
+    display: inline-block;
+    background-image: url(img/modifnegrosu.svg);
+    background-size: 0.7em;
+    width: 0.7em;
+    height: 0.7em;
+    background-repeat: no-repeat;
+    padding-right: 0.25em;
+}
+  
+.varSimbol{
+    padding: 0 0.5em;
+}
+.varSimbol::before{
+    display: inline-block;
+    content: ' ';
+    background-size: 0.7em;
+    width: 0.7em;
+    height: 0.7em;
+    padding-right: 0.25em;
+}
+        /* zona BID / ASK */
+.ba_bid, .ba_ask{
+    display: flex;
+    padding: 0 !important;
+    align-items: center;
+    justify-content: center;
+}
+.ba_bid > span, .ba_ask > span{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    height: 100%;
+    margin:0 !important;
+    text-align: left;
+    color: white;
+}
+#BID, #ASK{
+    flex: 1.4;
+}
+#BID{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    justify-content: left;
+    padding-left: 0.5em;
+}
+#ASK{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: right;
+    justify-content: right;
+    align-content: flex-end;
+    flex-direction: row-reverse;
+    padding-right:0.5em;
+}
+.ba_bid :nth-child(1){
+    flex:0.8;
+    border-right: solid 2px white;
+}
+.ba_ask :nth-child(2){
+    flex:0.8;
+    border-left: solid 2px white;
+}
+.modifpozBID {background-color:#00c805; color: white !important;}
+.modifpozASK {background-color:#00c805; color: white !important;}
+.modifnegBID {background-color:#f35530; color: white !important;}
+.modifnegASK {background-color:#f35530; color: white !important;}
+.modifpozBID::after{
+    display: inline-block;
+    content: " ";
+    background-image: url(img/modifpoz.svg);
+    background-size: 0.7em;
+    width: 0.7em;
+    height: 0.7em;
+    background-repeat: no-repeat;
+    margin-left: 3px;
+
+}
+.modifnegBID::after{
+    display: inline-block;
+    content: " ";
+    background-image: url(img/modifneg.svg);
+    background-size: 0.7em;
+    width: 0.7em;
+    height: 0.7em;
+    background-repeat: no-repeat;
+    margin: 3px;
+}
+.modifpozASK::after{
+    display: inline-block;
+    content: " ";
+    background-image: url(img/modifpoz.svg);
+    background-size: 0.7em;
+    width: 0.7em;
+    height: 0.7em;
+    background-repeat: no-repeat;
+    margin-right: 3px;
+
+}
+.modifnegASK::after{
+    display: inline-block;
+    content: " ";
+    background-image: url(img/modifneg.svg);
+    background-size: 0.7em;
+    width: 0.7em;
+    height: 0.7em;
+    background-repeat: no-repeat;
+    margin-right: 3px;
+}
+
+@media screen and (max-width: 375px) {
+    .tv-lightweight-charts{
+        width: 100%;
+    }
+}
