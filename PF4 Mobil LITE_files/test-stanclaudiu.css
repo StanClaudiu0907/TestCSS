@@ -176,8 +176,4 @@
     margin-right: 3px;
 }
 
-@media screen and (max-width: 375px) {
-    .tv-lightweight-charts{
-        width: 100%;
-    }
 }
